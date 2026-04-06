@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "surface-dim": "#dbdcc3",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#241a00",
+                    "tertiary-fixed": "#a3f69c",
+                    "surface-container-low": "#f5f5dc",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-tertiary-container": "#56a554",
+                    "tertiary-fixed-dim": "#88d982",
+                    "primary-container": "#3e2723",
+                    "surface-container-high": "#eaead1",
+                    "on-background": "#1b1d0e",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#ffdad4",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#e3beb8",
+                    "on-surface": "#1b1d0e",
+                    "secondary-fixed": "#ffe088",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface-container": "#efefd7",
+                    "on-primary-container": "#ae8d87",
+                    "inverse-surface": "#303221",
+                    "primary": "#271310",
+                    "secondary": "#735c00",
+                    "outline-variant": "#d3c3c0",
+                    "secondary-fixed-dim": "#e9c349",
+                    "on-secondary-container": "#745c00",
+                    "primary-fixed-dim": "#e3beb8",
+                    "on-primary-fixed-variant": "#5b403c",
+                    "surface-container-highest": "#e4e4cc",
+                    "surface": "#fbfbe2",
+                    "secondary-container": "#fed65b",
+                    "on-surface-variant": "#504442",
+                    "surface-bright": "#fbfbe2",
+                    "outline": "#827472",
+                    "tertiary": "#001d03",
+                    "tertiary-container": "#003508",
+                    "on-primary-fixed": "#2b1613",
+                    "on-tertiary-fixed-variant": "#005312",
+                    "background": "#fbfbe2",
+                    "on-tertiary-fixed": "#002204",
+                    "surface-variant": "#e4e4cc",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f2f2d9",
+                    "surface-tint": "#745853"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 32px 64px -12px rgba(27, 29, 14, 0.06);
+        }
+        .glass-nav {
+            background: rgba(251, 251, 226, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="text-2xl font-bold font-headline text-primary tracking-tighter">The Lima Editorial</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="font-headline text-lg tracking-tight text-secondary border-b border-secondary pb-1" href="#">Menu</a>
+<a class="font-headline text-lg tracking-tight text-primary hover:text-secondary transition-colors duration-300" href="#">Heritage</a>
+<a class="font-headline text-lg tracking-tight text-primary hover:text-secondary transition-colors duration-300" href="#">Locations</a>
+<a class="font-headline text-lg tracking-tight text-primary hover:text-secondary transition-colors duration-300" href="#">Brewing Guides</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-primary scale-95 active:opacity-80 transition-transform">search</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 font-label font-bold text-sm uppercase tracking-widest hover:bg-secondary transition-colors duration-300 scale-95 active:opacity-80 transition-transform">Order Now</button>
+</div>
+</div>
+<div class="bg-surface-container-low h-[1px] w-full opacity-20"></div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-8 max-w-7xl mx-auto mb-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 z-10">
+<span class="font-label text-secondary uppercase tracking-[0.3em] text-sm mb-6 block">Artisanal Excellence</span>
+<h1 class="font-headline text-6xl md:text-8xl text-primary leading-[1.1] tracking-tighter mb-8">
+                        The Art of <br/><span class="italic font-normal">Andean Coffee</span>
+</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-md mb-10 leading-relaxed">
+                        Experience the elevated ritual of Peruvian specialty coffee, curated with precision and served in the heart of Miraflores.
+                    </p>
+<button class="bg-primary text-on-primary px-10 py-5 font-label font-bold text-base uppercase tracking-widest hover:bg-secondary transition-all duration-300 editorial-shadow">
+                        Visit Our Cafe
+                    </button>
+</div>
+<div class="lg:col-span-6 lg:-ml-24 relative">
+<div class="aspect-[4/5] overflow-hidden rounded-xl editorial-shadow">
+<img alt="Specialty Coffee Pour" class="w-full h-full object-cover" data-alt="Close-up of golden specialty coffee being poured from a glass V60 server into a ceramic cup with steam rising in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzsdGYBnhB74AII8f8ghlsGrpwFvBVUn1_6Qw6H9lMXnYN-0tqjIbXKT5Fqw8nLH8iGj6rRbhyylX7B45tx--_lgeCw3CEe_O_sK4GP444vTu5LRwxrbAULCNE5XQX-NjfyvTdR8WGC6h7HlJ_90UWueHt7SW7qpxvdLxJBFoRiXkEORW6HDI0Y5kLwFb-dT4BIYdlOpioUj3jmrYh6S3_ME9BgcP7hY4cJeLPWmxkSkCInngYkPrlTEYgFgkgGZVwdNyym3TxwAap"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-tertiary-container text-on-tertiary-container px-6 py-4 rounded-lg hidden md:block">
+<span class="font-label text-xs uppercase tracking-widest block mb-1">Origin Today</span>
+<span class="font-headline text-xl">Cajamarca Highlands</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Story Section -->
+<section class="bg-surface-container-low py-32 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="grid grid-cols-2 gap-4">
+<img alt="Coffee Farm" class="rounded-xl mt-12" data-alt="Lush green coffee plantation in the Peruvian Andes mountains under a soft misty morning sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYoUh41BX_G8afAepSCckcELLKbWxX9hZZZ2Wjm1cT17fhQ2g_6HK9aBIangL5mMZl5PO4DaNvz3-H4iUJ64cBH5Cv8BDb8NiJXqS97YPmHaVf-2GcjDMHJlUfPrw7kyLJBKoqNRP3rgDr2SEY-094g8hlRFFpYHKSIulgIUMb2-2J15cAihN311KhDWAcSqYrtncUUWRI5j_PysL193hO6GuJPYC7HuK_kGQRh1MXeUh9HBPCT5miV2_vEjH5kXbldHCs6NSda_pr"/>
+<img alt="Coffee Roasting" class="rounded-xl" data-alt="Hands of an artisan coffee roaster checking the color of freshly roasted organic coffee beans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOcxcS2WwdqfzLY8bGPDSVJfweZ9x1q_nf-hHbb8JGWYVUXTgGEuKKE0i3ji8m8k_z1JTGxD4drm-ZEGndUg6xDCxTgoStUu-BZ2k5i7fTJKh3tAi3iB4oABCj8ozvFPxdB44onBUntJG8mTN_zBRe3Tv64L3UB6nzXgNdnRrPkInEP8iTZvHrV0Gyfwsnfz6KUwlkm3CS_0dDb3C8Y5YWmrYlj9nl_DjC4hvp8LU1Vmkdr73fzfX3ENs4N_uqVsdNx5d8PvHpnwmo"/>
+</div>
+</div>
+<div>
+<h2 class="font-headline text-5xl text-primary mb-8 tracking-tight">From the Andes to Miraflores</h2>
+<div class="space-y-6 text-on-surface-variant font-body text-lg leading-relaxed">
+<p>
+                                Our journey begins at 1,800 meters above sea level, where the thin air and volcanic soil of the Peruvian Andes create the perfect terroir for our signature beans.
+                            </p>
+<p>
+                                We work directly with small-scale producers in Cusco and Cajamarca, ensuring every cherry is hand-picked at peak ripeness. Each batch is then transported to our Miraflores roastery, where we coax out the delicate notes of citrus, chocolate, and Andean flora.
+                            </p>
+</div>
+<div class="mt-12 flex items-center space-x-4 group cursor-pointer">
+<span class="font-label font-bold text-secondary uppercase tracking-widest">Our Heritage Story</span>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Menu Section -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-20">
+<div>
+<span class="font-label text-secondary uppercase tracking-[0.3em] text-sm mb-4 block">The Selection</span>
+<h2 class="font-headline text-5xl text-primary tracking-tight">Signature Menu</h2>
+</div>
+<div class="hidden md:block">
+<p class="font-body text-on-surface-variant max-w-xs text-right">A curated seasonal collection of our finest brews and artisanal accompaniments.</p>
+</div>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Feature: Espresso -->
+<div class="md:col-span-7 bg-surface-container rounded-xl overflow-hidden group">
+<div class="aspect-video overflow-hidden">
+<img alt="Espresso Tonic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A modern espresso tonic served in a crystal glass with a slice of dried orange and a sprig of rosemary on a marble table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTZov2WjZXnsOBSvUGYdFAuc4ZqZWer6Pw4QielOEvof5EIMRtJi-AjZ6XWXmECFUuCRlR3u2HzCyfNopkzn14DomxNp4z1xXfA6hLzwGWvlG-gfumy--IM_gzFXHRV83whtZEhNbUJyFeypKKT-SdIsj6E23ZNMkcr8VIy_FlE-nCKMVrOEWWSRVDy2kUEjAVtaixgFOvXQWFCLFqVLYfrPWW7qKiKnhll5KbuCYXMh0DsGtcHrSHMt3_-AhsKyOjgLAZLfWCAjfe"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-2xl text-primary">Miraflores Espresso Tonic</h3>
+<span class="font-body font-bold text-secondary">S/ 18</span>
+</div>
+<p class="font-body text-on-surface-variant">Our house espresso pulled over premium tonic water, accented with local botanical oils and Andean citrus zest.</p>
+</div>
+</div>
+<!-- Pastries -->
+<div class="md:col-span-5 bg-surface-container-high rounded-xl p-8 flex flex-col justify-between">
+<div>
+<div class="w-full aspect-square rounded-lg overflow-hidden mb-6">
+<img alt="Artisanal Pastries" class="w-full h-full object-cover" data-alt="A selection of artisanal sourdough pastries and golden croissants on a wooden tray with a dusting of flour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTlu8r_MVP-T-fHIJtnr6O0J--7XzAFQf2RY6ko5Re5wuHdu8F38-wfvjBZLcds3hZ3W456W1zjC74r43zlKWV9KYQzjCddEBgmZbRHHl7KPLesWM4YD_YTA-Jp9aPUOgLyVwU3tx1Awm5lOMbcFRMPHVHZD87HreKWR3RAFy2LFpYaL1pO4fTWqsdWeTxXc4wDQvhquocrNFEuRkTPJK2K0vxFSiqQIreCiZXP5QTd-hqMyHLO58HVIiILMMY7y8R50GThGoO1xFV"/>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-4">Artisanal Pastries</h3>
+<p class="font-body text-on-surface-variant mb-6">Daily selections of sourdough croissants and local fruit tarts, baked fresh in our stone oven.</p>
+</div>
+<div class="flex items-center justify-between pt-6 border-t border-outline-variant/20">
+<span class="font-label text-xs uppercase tracking-widest">Seasonal selection</span>
+<span class="font-body font-bold text-secondary">From S/ 12</span>
+</div>
+</div>
+<!-- Peruvian Breakfast -->
+<div class="md:col-span-12 bg-primary text-on-primary rounded-xl overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="p-12 flex flex-col justify-center">
+<span class="font-label text-on-primary/60 uppercase tracking-[0.3em] text-xs mb-4 block">Tradition Reimagined</span>
+<h3 class="font-headline text-4xl mb-6">The Classic Peruvian Plate</h3>
+<p class="text-on-primary/80 font-body text-lg leading-relaxed mb-8">
+                                A hearty morning ritual: slow-roasted pork crackling, sweet potato rounds, and marinated red onion salsa, served with a fresh crusty roll.
+                            </p>
+<div class="flex items-center space-x-4">
+<span class="bg-secondary px-4 py-2 text-on-secondary font-label text-sm font-bold uppercase tracking-widest">House Specialty</span>
+<span class="font-headline text-2xl">S/ 34</span>
+</div>
+</div>
+<div class="h-80 lg:h-auto">
+<img alt="Peruvian Breakfast" class="w-full h-full object-cover" data-alt="Traditional Peruvian breakfast plate with crispy pork, golden sweet potato, and bright purple onion salad on a minimalist plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtiGwhlHFb_hpWK-mfCrY1qyJyxMdIfa7NCJRc2D-CMXz9fBFfnNoz_YoqDl2cSUUwQiqbz5CPuk5RowSKEEkA08vkhn97nPrVlSwRsi6AE1oVE1seth5ghaxLiBvrHkoj1snqtT_0zFZM4F5qQmkqvrx0qPU_VI-tbCA8Q1TDVoY3OK_5BrCx-ZT0gzMWmY9da05Oz0vOuUx0OiMCHn-VeCLbrYLZ6btoBO4_z3n2hTrJTTsxFar2fhMO142sB8ZxvELrO2CUqVTy"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location/Newsletter Section -->
+<section class="py-24 px-8 bg-surface-container-low/50">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="font-headline text-4xl text-primary mb-12 tracking-tight">Visit our sanctuary in Miraflores</h2>
+<div class="max-w-4xl mx-auto rounded-xl overflow-hidden editorial-shadow h-96 mb-12">
+<img alt="Cafe Interior" class="w-full h-full object-cover" data-alt="Interior of a luxury coffee shop in Lima with marble counters, dark wood accents, and soft warm pendant lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4D2MBO8VLsyXTtDl20a9E0PY50GBYJvgfHxNT1C5WNYQLfkAN_mwsp1iuAdU-QmoXzM8WNRSv-325dUhpLtRYPVnMrwp8iltB8uMqwnZtc0HBCZoLql_BdWnp7NtFypnkXfwdIgS-BER7TCtWWECN8OxV3I_J5cLK0oj0hWqEfMco7o50uGdCo0Z0LzeZnDZsHxhSYRNFaCni066iSo3pH59dSmnCtKnoMMdGdpaPAO-UmEtdFSegN660CZGmV-d6Hq21pStPjU21"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+<div>
+<h4 class="font-headline text-xl text-primary mb-4">The Flagship</h4>
+<p class="font-body text-on-surface-variant">Av. Mariscal La Mar 1230,<br/>Miraflores, Lima 15074</p>
+</div>
+<div>
+<h4 class="font-headline text-xl text-primary mb-4">The Roastery</h4>
+<p class="font-body text-on-surface-variant">Calle Alcanfores 455,<br/>Miraflores, Lima 15074</p>
+</div>
+<div>
+<h4 class="font-headline text-xl text-primary mb-4">Hours</h4>
+<p class="font-body text-on-surface-variant">Mon – Sat: 7:00 – 21:00<br/>Sun: 8:00 – 20:00</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container w-full py-16 px-8 mt-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto items-start">
+<div class="space-y-6">
+<div class="font-noto-serif text-xl italic text-secondary">The Lima Editorial</div>
+<p class="font-manrope text-sm uppercase tracking-widest text-primary/70 leading-loose">
+                    © 2024 The Lima Editorial. <br/>Cultivated in the Andes, <br/>Roasted in Miraflores.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col space-y-4">
+<a class="font-manrope text-sm uppercase tracking-widest text-primary/70 hover:text-secondary underline decoration-secondary/30 underline-offset-4 transition-opacity opacity-80" href="#">Privacy Policy</a>
+<a class="font-manrope text-sm uppercase tracking-widest text-primary/70 hover:text-secondary underline decoration-secondary/30 underline-offset-4 transition-opacity opacity-80" href="#">Wholesale</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-manrope text-sm uppercase tracking-widest text-primary/70 hover:text-secondary underline decoration-secondary/30 underline-offset-4 transition-opacity opacity-80" href="#">Careers</a>
+<a class="font-manrope text-sm uppercase tracking-widest text-primary/70 hover:text-secondary underline decoration-secondary/30 underline-offset-4 transition-opacity opacity-80" href="#">Contact Us</a>
+</div>
+</div>
+<div class="flex flex-col space-y-6">
+<span class="font-manrope text-sm uppercase tracking-widest font-bold text-secondary">Follow Our Journey</span>
+<div class="flex space-x-6">
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">camera</span></a>
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">brand_awareness</span></a>
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
